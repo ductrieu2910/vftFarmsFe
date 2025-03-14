@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/resource/css/main.css">
+        <link rel="stylesheet" href="/resource/css/popup.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@600&family=Maitree:wght@600&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="body-content">
+            <header class="header">
+                <div class="head-pc">
+                    <div class="head-pc-top" id="header-top-pc">
+                        <div class="menu-button">
+                            <div class="head-location">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8.00004 1.33333C5.42004 1.33333 3.33337 3.42 3.33337 6C3.33337 9.5 8.00004 14.6667 8.00004 14.6667C8.00004 14.6667 12.6667 9.5 12.6667 6C12.6667 3.42 10.58 1.33333 8.00004 1.33333ZM4.66671 6C4.66671 4.16 6.16004 2.66666 8.00004 2.66666C9.84004 2.66666 11.3334 4.16 11.3334 6C11.3334 7.92 9.41337 10.7933 8.00004 12.5867C6.61337 10.8067 4.66671 7.89999 4.66671 6Z" fill="#525252"/>
+                                    <path d="M8.00004 7.66666C8.92052 7.66666 9.66671 6.92047 9.66671 6C9.66671 5.07952 8.92052 4.33333 8.00004 4.33333C7.07957 4.33333 6.33337 5.07952 6.33337 6C6.33337 6.92047 7.07957 7.66666 8.00004 7.66666Z" fill="#525252"/>
+                                </svg>
+                                <a class="btn-location" href="">Ba đình, Hà Nội</a>
+                            </div>
+                            <div class="head-button">
+                                <div class="head-numberphone">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M4.36 3.33333C4.4 3.92667 4.5 4.50667 4.66 5.06L3.86 5.86C3.58667 5.06 3.41333 4.21333 3.35333 3.33333H4.36ZM10.9333 11.3467C11.5 11.5067 12.08 11.6067 12.6667 11.6467V12.64C11.7867 12.58 10.94 12.4067 10.1333 12.14L10.9333 11.3467ZM5 2H2.66667C2.3 2 2 2.3 2 2.66667C2 8.92667 7.07333 14 13.3333 14C13.7 14 14 13.7 14 13.3333V11.0067C14 10.64 13.7 10.34 13.3333 10.34C12.5067 10.34 11.7 10.2067 10.9533 9.96C10.8867 9.93333 10.8133 9.92667 10.7467 9.92667C10.5733 9.92667 10.4067 9.99333 10.2733 10.12L8.80667 11.5867C6.92 10.62 5.37333 9.08 4.41333 7.19333L5.88 5.72667C6.06667 5.54 6.12 5.28 6.04667 5.04667C5.8 4.3 5.66667 3.5 5.66667 2.66667C5.66667 2.3 5.36667 2 5 2Z" fill="#525252"/>
+                                    </svg>
+                                    <a class="btn-numberphone" href="">0336978807</a>
+                                </div>
+                                <div class="head-support">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M7.33325 12H8.66659V10.6667H7.33325V12ZM7.99992 1.33333C4.31992 1.33333 1.33325 4.31999 1.33325 8C1.33325 11.68 4.31992 14.6667 7.99992 14.6667C11.6799 14.6667 14.6666 11.68 14.6666 8C14.6666 4.31999 11.6799 1.33333 7.99992 1.33333ZM7.99992 13.3333C5.05992 13.3333 2.66659 10.94 2.66659 8C2.66659 5.06 5.05992 2.66666 7.99992 2.66666C10.9399 2.66666 13.3333 5.06 13.3333 8C13.3333 10.94 10.9399 13.3333 7.99992 13.3333ZM7.99992 3.99999C6.52659 3.99999 5.33325 5.19333 5.33325 6.66666H6.66659C6.66659 5.93333 7.26659 5.33333 7.99992 5.33333C8.73325 5.33333 9.33325 5.93333 9.33325 6.66666C9.33325 8 7.33325 7.83333 7.33325 10H8.66659C8.66659 8.5 10.6666 8.33333 10.6666 6.66666C10.6666 5.19333 9.47325 3.99999 7.99992 3.99999Z" fill="#525252"/>
+                                    </svg>
+                                    <a class="btn-support">Hỗ trợ</a>
+                                </div>
+                                <div class="head-article">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M10.6667 2H3.33333C2.6 2 2 2.6 2 3.33333V12.6667C2 13.4 2.6 14 3.33333 14H12.6667C13.4 14 14 13.4 14 12.6667V5.33333L10.6667 2ZM12.6667 12.6667H3.33333V3.33333H10V6H12.6667V12.6667ZM4.66667 11.3333H11.3333V10H4.66667V11.3333ZM8 4.66667H4.66667V6H8V4.66667ZM4.66667 8.66667H11.3333V7.33333H4.66667V8.66667Z" fill="#525252"/>
+                                    </svg>
+                                    <a class="btn-article" href="">Bài viết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="head-pc-bottom" id="header-bottom-pc">
+                        <div class="head-menu-bottom">
+                            <div class="head-logo-menu">
+                                <div class="logo">
+                                    <img class="img-vft" src="/resource/img/logo vft 1.png" alt="">
+                                </div>
+                                <div class="menu-list">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M16.6667 15H3.33337M12.0834 10H3.33337M16.6667 5H3.33337" stroke="#0D121C" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                    <a class="btn-list">Danh sách</a>
+                                </div>
+                            </div>
+                            <div class="search-profile-cart">
+                                <div class="search-button">
+                                    <div class="btn-popup-search">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M13.1291 11.8792H12.4707L12.2374 11.6542C13.0541 10.7042 13.5457 9.47083 13.5457 8.12916C13.5457 5.13749 11.1207 2.71249 8.12907 2.71249C5.1374 2.71249 2.7124 5.13749 2.7124 8.12916C2.7124 11.1208 5.1374 13.5458 8.12907 13.5458C9.47074 13.5458 10.7041 13.0542 11.6541 12.2375L11.8791 12.4708V13.1292L16.0457 17.2875L17.2874 16.0458L13.1291 11.8792ZM8.12907 11.8792C6.05407 11.8792 4.37907 10.2042 4.37907 8.12916C4.37907 6.05416 6.05407 4.37916 8.12907 4.37916C10.2041 4.37916 11.8791 6.05416 11.8791 8.12916C11.8791 10.2042 10.2041 11.8792 8.12907 11.8792Z" fill="#525252"/>
+                                          </svg>
+                                        <a id="btnOpenForm" onclick="openPopup()" class="btn-search">Tìm kiếm</a>
+                                    </div>
+                                </div>
+                                <div class="profile">
+                                    <a class="btn-profile" onclick="openPopupLogin()" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M2 17.0937C2 13.9474 4.62857 11.3968 10 11.3968C15.3714 11.3968 18 13.9474 18 17.0937C18 17.5942 17.6348 18 17.1843 18H2.81569C2.3652 18 2 17.5942 2 17.0937Z" stroke="black" stroke-width="2"/>
+                                        <path d="M13 5C13 6.65685 11.6569 8 10 8C8.34314 8 7 6.65685 7 5C7 3.34315 8.34314 2 10 2C11.6569 2 13 3.34315 13 5Z" stroke="black" stroke-width="2"/>
+                                      </svg></a>
+                                </div>
+                                <div class="profile-cart"> 
+                                    <div class="cart">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M13 7V4.5C13 2.84315 11.6569 1.5 10 1.5C8.34314 1.5 7 2.84315 7 4.5V7M3.93939 18.5H16.0606C17.1317 18.5 18 17.6478 18 16.5967L16.7576 6.49997C16.7576 5.44879 15.8893 4.59663 14.8182 4.59663H4.93939C3.8683 4.59663 3 5.44879 3 6.49997L2 16.5967C2 17.6478 2.8683 18.5 3.93939 18.5Z" stroke="#0D121C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <button type="button" class="btn-cart" id="cartButton">Giỏ hàng</button>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <!-- POPUP FORM -->
+              <div class="cart-dropdown" id="cartDropdown">
+                <div class="frame-1000010891-card">
+                  <div class="frame-1000010833-card">
+                    <div class="product-name-card">Giỏ hàng (4)</div>
+                    <div class="product-name2-card">Xem tất cả</div>
+                  </div>
+                  <div class="frame-1000010890-card">
+                    <div class="container-card">
+                      <img class="container2-card" src="container1.png" />
+                      <div class="product-info-card">
+                        <div class="product-name3-card">Xà lách lolo xanh WinEco 300g</div>
+                        <div class="product-code-card">SKU: 201303100375</div>
+                        <div class="frame-1000010849-card">
+                          <div class="product-price-card">20.000 VNĐ</div>
+                          <div class="badge-card">
+                            <div class="frame-4-card">
+                              <div class="badge2-card">-15%</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="frame-1000010892-card">
+                          <div class="frame-1000010889-card">
+                            <div class="badge3-card">
+                              <div class="frame-4-card">
+                                <div class="badge4-card">Hữu cơ</div>
+                              </div>
+                            </div>
+                            <div class="badge5-card">
+                              <div class="frame-4-card">
+                                <div class="badge6-card">200g</div>
+                              </div>
+                            </div>
+                            <div class="badge7-card">
+                              <div class="frame-4-card">
+                                <div class="badge8-card">2 sản phẩm</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="badge7-card">
+                            <div class="frame-4-card">
+                              <div class="badge8-card">Xoá</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="rectangle-11-card"></div>
+                    <div class="container-card">
+                      <img class="container2-card" src="container3.png" />
+                      <div class="product-info-card">
+                        <div class="product-name3-card">Xà lách lolo xanh WinEco 300g</div>
+                        <div class="product-code-card">SKU: 201303100375</div>
+                        <div class="frame-1000010849-card">
+                          <div class="product-price-card">20.000 VNĐ</div>
+                          <div class="badge-card">
+                            <div class="frame-4-card">
+                              <div class="badge2-card">-15%</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="frame-1000010892-card">
+                          <div class="frame-1000010889-card">
+                            <div class="badge9-card">
+                              <div class="frame-4-card">
+                                <div class="badge10-card">VietGap</div>
+                              </div>
+                            </div>
+                            <div class="badge5-card">
+                              <div class="frame-4-card">
+                                <div class="badge6-card">200g</div>
+                              </div>
+                            </div>
+                            <div class="badge7-card">
+                              <div class="frame-4-card">
+                                <div class="badge8-card">2 sản phẩm</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="badge7-card">
+                            <div class="frame-4-card">
+                              <div class="badge8-card">Xoá</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="rectangle-13-card"></div>
+                    <div class="container-card">
+                      <img class="container2-card" src="container5.png" />
+                      <div class="product-info-card">
+                        <div class="product-name3-card">Xà lách lolo xanh WinEco 300g</div>
+                        <div class="product-code-card">SKU: 201303100375</div>
+                        <div class="frame-1000010849-card">
+                          <div class="product-price-card">20.000 VNĐ</div>
+                          <div class="badge-card">
+                            <div class="frame-4-card">
+                              <div class="badge2-card">-15%</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="frame-1000010892-card">
+                          <div class="frame-1000010889-card">
+                            <div class="badge3-card">
+                              <div class="frame-4-card">
+                                <div class="badge4-card">Hữu cơ</div>
+                              </div>
+                            </div>
+                            <div class="badge5-card">
+                              <div class="frame-4-card">
+                                <div class="badge6-card">200g</div>
+                              </div>
+                            </div>
+                            <div class="badge7-card">
+                              <div class="frame-4-card">
+                                <div class="badge8-card">2 sản phẩm</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="badge7-card">
+                            <div class="frame-4-card">
+                              <div class="badge8-card">Xoá</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="rectangle-12-card"></div>
+                    <div class="container-card">
+                      <img class="container2-card" src="container7.png" />
+                      <div class="product-info-card">
+                        <div class="product-name3-card">Xà lách lolo xanh WinEco 300g</div>
+                        <div class="product-code-card">SKU: 201303100375</div>
+                        <div class="frame-1000010849-card">
+                          <div class="product-price-card">20.000 VNĐ</div>
+                          <div class="badge-card">
+                            <div class="frame-4-card">
+                              <div class="badge2-card">-15%</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="frame-1000010892-card">
+                          <div class="frame-1000010889-card">
+                            <div class="badge9-card">
+                              <div class="frame-4-card">
+                                <div class="badge10-card">VietGap</div>
+                              </div>
+                            </div>
+                            <div class="badge5-card">
+                              <div class="frame-4-card">
+                                <div class="badge6-card">200g</div>
+                              </div>
+                            </div>
+                            <div class="badge7-card">
+                              <div class="frame-4-card">
+                                <div class="badge8-card">2 sản phẩm</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="badge7-card">
+                            <div class="frame-4-card">
+                              <div class="badge8-card">Xoá</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="frame-10000108912-card">
+                    <div class="frame-1000010876-card">
+                      <div class="product-name4-card">Tổng</div>
+                      <div class="product-name5-card">9.000.000</div>
+                    </div>
+                    <div class="buttons-card">
+                      <div class="frame-1-card">
+                        <div class="text-card">Đặt Hàng</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                </div>
+              <!-- POPUP FORM -->
+                <div class="popup-overlay" id="popupOverlay">
+                  <div class="frame-1000010880">
+                    <div class="frame-1000010872">
+                      <div class="buttons">
+                        <img class="search" src="resource/img/search0.svg" />
+                        <div class="frame-1">
+                          <input class="text" placeholder="Tìm kiếm">
+                        </div>
+                      </div>
+                      <div class="buttons2">
+                        <div class="frame-1">
+                          <button class="text" onclick="closePopup()">Đóng</button>
+                        </div>          
+                      </div>
+                    </div>
+                    <div class="rectangle-64"></div>
+                    <div class="frame-1000010873">
+                      <div class="frame-1000010534">
+                        <div class="t-m-ki-m-g-n-y">Tìm kiếm gần đây</div>
+                      </div>
+                      <div class="frame-1000010883">
+                        <div class="frame-1000010882">
+                          <div class="buttons3">
+                            <div class="frame-1">
+                              <div class="text2">Xà lách</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="frame-1000010884">
+                          <div class="buttons3">
+                            <div class="frame-1">
+                              <div class="text2">Tên sản phẩm</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="frame-1000010885">
+                          <div class="buttons3">
+                            <div class="frame-1">
+                              <div class="text2">Tên sản phẩm</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="frame-1000010887">
+                          <div class="buttons3">
+                            <div class="frame-1">
+                              <div class="text2">Tên sản phẩm</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="frame-1000010888">
+                          <div class="buttons3">
+                            <div class="frame-1">
+                              <div class="text2">Tên sản phẩm</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="frame-10000108832">
+                          <div class="buttons3">
+                            <div class="frame-1">
+                              <div class="text2">Tên sản phẩm</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="frame-1000010886">
+                          <div class="buttons3">
+                            <div class="frame-1">
+                              <div class="text2">Tên sản phẩm</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="frame-1000010882">
+                          <div class="buttons3">
+                            <div class="frame-1">
+                              <div class="text2">Tên sản phẩm</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="rectangle-65"></div>
+                    <div class="frame-1000010532">
+                      <div class="frame-1000010534">
+                        <div class="khuy-n-m-i-n-i-b-t">Khuyến mãi nổi bật</div>
+                      </div>
+                      <div class="frame-1000010868">
+                        <div class="frame-1000010866">
+                          <div class="frame-10000108732">
+                            <img class="gift-01" src="resource/img/gift-01.svg" />
+                          </div>
+                          <div class="frame-4">
+                            <div class="t-ng-s-n-ph-m">Tặng sản phẩm</div>
+                          </div>
+                        </div>
+                        <div class="frame-1000010867">
+                          <div class="frame-1000010874">
+                            <img class="gift-012" src="resource/img/gift-01.svg" />
+                          </div>
+                          <div class="frame-4">
+                            <div class="t-ng-s-n-ph-m">Tặng sản phẩm</div>
+                          </div>
+                        </div>
+                        <div class="frame-10000108682">
+                          <div class="frame-1000010875">
+                            <img class="checkmark-starburst" src="resource/img/Checkmark Starburst.svg" />
+                          </div>
+                          <div class="frame-4">
+                            <div class="u-i">Ưu đãi</div>
+                          </div>
+                        </div>
+                        <div class="frame-1000010869">
+                          <div class="frame-1000010876">
+                            <img class="checkmark-starburst2" src="resource/img/Checkmark Starburst.svg" />
+                          </div>
+                          <div class="frame-4">
+                            <div class="u-i">Ưu đãi</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="rectangle-63"></div>
+                    <div class="frame-1000010531">
+                      <div class="frame-10000105342">
+                        <div class="h-ng-m-i-v">Hàng mới về</div>
+                        <div class="xem-t-t-c">Xem tất cả</div>
+                      </div>
+                      <div class="frame-1000010529">
+                        <div class="container">
+                          <img class="container2" src="container1.png" />
+                          <div class="product-info">
+                            <div class="product-name">Xà lách lolo xanh WinEco 300g</div>
+                            <div class="product-code">SKU: 201303100375</div>
+                            <div class="price-info">
+                              <div class="current-price">22.500.000</div>
+                              <div class="discount">-30%</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="container">
+                          <img class="container2" src="container3.png" />
+                          <div class="product-info">
+                            <div class="product-name">Xà lách lolo xanh WinEco 300g</div>
+                            <div class="product-code">SKU: 201303100375</div>
+                            <div class="price-info">
+                              <div class="current-price">22.500.000</div>
+                              <div class="discount">-30%</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="container">
+                          <img class="container2" src="container5.png" />
+                          <div class="product-info">
+                            <div class="product-name">Xà lách lolo xanh WinEco 300g</div>
+                            <div class="product-code">SKU: 201303100375</div>
+                            <div class="price-info">
+                              <div class="current-price">22.500.000</div>
+                              <div class="discount">-30%</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="container">
+                          <img class="container2" src="container7.png" />
+                          <div class="product-info">
+                            <div class="product-name">Xà lách lolo xanh WinEco 300g</div>
+                            <div class="product-code">SKU: 201303100375</div>
+                            <div class="price-info">
+                              <div class="current-price">22.500.000</div>
+                              <div class="discount">-30%</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+              <!-- LOGIN FORM -->
+              <div class="popup-overlay" id="popupOverlay-login">
+                <div class="frame-1000010893-login" id="popupOverlay-login">
+                  <div class="frame-1000010894-login">
+                    <div class="frame-1000010895-login">
+                      <img class="logo-vft-1-login" src="resource/img/logo vft 1.png" />
+                      <div class="buttons-login">
+                        <a style="cursor: pointer;" onclick="closePopupLogin()"><img  class="x-02-login" src="resource/img/x-02.png"/></a>
+                      </div>
+                    </div>
+                    <div class="container-login">
+                      <div class="text-login">Đăng nhập</div>
+                      <div class="text2-login">Nhập thông tin để truy cập tài khoản của bạn</div>
+                    </div>
+                  </div>
+                  <div class="container2-login">
+                    <div class="tag-input-1-0-login">
+                      <div class="frame-2-login">
+                        <div class="tag-input-login">Nhập Email/ Số điện thoại</div>
+                        <img
+                          class="information-circle-contained-filled-login"
+                          src="resource/img/inf-icon.png"
+                        />
+                      </div>
+                      <div class="compact-dropdowns-1-0-login">
+                        <input class="add-tags-login" placeholder="Nhập..."></input>
+                      </div>
+                    </div>
+                    <div class="tag-input-1-0-login">
+                      <div class="frame-2-login">
+                        <div class="tag-input">Mật khẩu</div>
+                        <img
+                          class="information-circle-contained-filled2-login"
+                          src="resource/img/inf-icon.png"
+                        />
+                      </div>
+                      <div class="compact-dropdowns-1-0-login">
+                        <input class="add-tags" placeholder="Mật khẩu"></input>
+                      </div>
+                    </div>
+                    <div class="container3-login">
+                      <div class="checkbox-label-1-0-login">
+                        <div class="frame-5-login">
+                          <div class="frame-22-login">
+                            <div class="rectangle-1-login"></div>
+                          </div>
+                        </div>
+                        <div class="frame-4-login">
+                          <div class="focused-login">Nhớ mật khẩu</div>
+                        </div>
+                      </div>
+                      <div class="button-text-login">Quên mật khẩu?</div>
+                    </div>
+                    <button type="submit" class="buttons2-login">
+                      <div class="frame-1-login">
+                          <p class=" text3-login">Đăng ký</p>
+                      </div>
+                    </button>
+                    <div class="container4-login">
+                      <div class="text4-login">Bạn chưa có tài khoản?</div>
+                      <div class="button-text2-login">Đăng ký</div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+            </header>
+            <main class="main-content">
+                <div class="content">
+                    <div class="banner-main">
+                        <div class="banner">
+                            <div class="group-text-banner">
+                                <span class="text-banner">Chào mừng bạn đến với <br> VFT Farms V2</span>
+                                <span class="text-banner1">Hãy trải nghiệm và phản hồi để chúng mình có thể cải thiện tốt hơn</span>
+                            </div>
+                            <div class="btn-banner">
+                                <div class="frame-btn-suggest">
+                                    <a class="btn-suggest" href="">Gửi góp ý</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-voucher">
+                        <div class="list-voucher">
+                            <div class="voucher-1">
+                                <img class="subtract" src="/resource/img/Subtract1.svg" alt="">
+                                <div class="inf-voucher">
+                                    <div class="inf-button-voucher">
+                                        <div class="text-voucher">
+                                            <div class="price-voucher">đ150k</div>
+                                            <div class="vou-text">Giảm ngay 10k cho đơn hàng 79k khi mua các sản phẩm: Knorr, OMO, Comfort, Surf, Lifebuoy...</div>
+                                        </div>
+                                        <div class="button-voucher-1">
+                                            <a class="btn-vou" href="">Lấy</a>
+                                        </div>
+                                    </div>
+                                    <div class="line-1"></div>
+                                    <div class="vou-text-1">Áp dụng trong 1 ngày từ khi lấy mã</div>
+                                </div>
+                            </div>
+                            <div class="voucher-1">
+                                <img class="subtract" src="/resource/img/Subtract2.svg" alt="">
+                                <div class="inf-voucher">
+                                    <div class="inf-button-voucher">
+                                        <div class="text-voucher">
+                                            <div class="price-voucher">đ150k</div>
+                                            <div class="vou-text">Giảm ngay 10k cho đơn hàng 79k khi mua các sản phẩm: Knorr, OMO, Comfort, Surf, Lifebuoy...</div>
+                                        </div>
+                                        <div class="button-voucher-2">
+                                            <a class="btn-vou" href="">Lấy</a>
+                                        </div>
+                                    </div>
+                                    <div class="line-2"></div>
+                                    <div class="vou-text-2">Hết hạn sau 10h</div>
+                                </div>
+                            </div>
+                            <div class="voucher-1">
+                                <img class="subtract" src="/resource/img/Subtract3.svg" alt="">
+                                <div class="inf-voucher">
+                                    <div class="inf-button-voucher">
+                                        <div class="text-voucher">
+                                            <div class="price-voucher">đ150k</div>
+                                            <div class="vou-text">Giảm ngay 10k cho đơn hàng 79k khi mua các sản phẩm: Knorr, OMO, Comfort, Surf, Lifebuoy...</div>
+                                        </div>
+                                        <div class="button-voucher-3">
+                                            <a class="btn-vou" href="">Lấy</a>
+                                        </div>
+                                    </div>
+                                    <div class="line-3"></div>
+                                    <div class="vou-text-3">Hết hạn sau 10h</div>
+                                </div>
+                            </div>
+                            <div class="voucher-1">
+                                <img class="subtract" src="/resource/img/Subtract4.svg" alt="">
+                                <div class="inf-voucher">
+                                    <div class="inf-button-voucher">
+                                        <div class="text-voucher">
+                                            <div class="price-voucher">đ150k</div>
+                                            <div class="vou-text">Giảm ngay 10k cho đơn hàng 79k khi mua các sản phẩm: Knorr, OMO, Comfort, Surf, Lifebuoy...</div>
+                                        </div>
+                                        <div class="button-voucher-4">
+                                            <a class="btn-vou" href="">Lấy</a>
+                                        </div>
+                                    </div>
+                                    <div class="line-4"></div>
+                                    <div class="vou-text-4">Hết hạn sau 10h</div>
+                                </div>
+                            </div>
+                            <div class="voucher-1">
+                                <img class="subtract" src="/resource/img/Subtract1.svg" alt="">
+                                <div class="inf-voucher">
+                                    <div class="inf-button-voucher">
+                                        <div class="text-voucher">
+                                            <div class="price-voucher">đ150k</div>
+                                            <div class="vou-text">Giảm ngay 10k cho đơn hàng 79k khi mua các sản phẩm: Knorr, OMO, Comfort, Surf, Lifebuoy...</div>
+                                        </div>
+                                        <div class="button-voucher-5">
+                                            <a class="btn-vou" href="">Lấy</a>
+                                        </div>
+                                    </div>
+                                    <div class="line-1"></div>
+                                    <div class="vou-text-1">Hết hạn sau 10h</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flash-sale-content">
+                        <img class="bolt" src="resource/img/Vector.svg" alt="">
+                        <img class="bolt2" src="resource/img/Vector1.svg" alt="">
+                        <div class="flash-sale-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M14.6606 28H13.3273L14.6606 18.6667H9.99398C8.82065 18.6667 9.55398 17.6667 9.58065 17.6267C11.3006 14.5867 13.8873 10.0533 17.3406 4H18.674L17.3406 13.3333H22.0206C22.554 13.3333 22.8473 13.5867 22.554 14.2133C17.2873 23.4 14.6606 28 14.6606 28Z" fill="#F04438"/>
+                            </svg>
+                            <div class="text-fl">Flash sale</div>
+                        </div>
+                        <div class="list-product">
+                            <div class="product-card">
+                                <img class="product-img" src="resource/img/Product Image.png" alt="">
+                                <div class="product-info">
+                                    <div class="product-details">
+                                      <div class="tags">
+                                        <div class="badge">
+                                          <div class="frame-4">
+                                            <div class="badge2">Hữu cơ</div>
+                                          </div>
+                                        </div>
+                                        <div class="badge3">
+                                          <div class="frame-4">
+                                            <div class="badge4">VietGap</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-description">
+                                        <div class="product-name">Tên sản phẩm</div>
+                                        <div class="badge5">
+                                          <img class="check-contained-filled" src="resource/img/check-contained-filled.svg">
+                                          <div class="frame-4">
+                                            <div class="badge6">ĐVT: 1KG</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-price">20.000 VNĐ</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <img class="product-img" src="resource/img/Product Image.png" alt="">
+                                <div class="product-info">
+                                    <div class="product-details">
+                                      <div class="tags">
+                                        <div class="badge">
+                                          <div class="frame-4">
+                                            <div class="badge2">Hữu cơ</div>
+                                          </div>
+                                        </div>
+                                        <div class="badge3">
+                                          <div class="frame-4">
+                                            <div class="badge4">VietGap</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-description">
+                                        <div class="product-name">Tên sản phẩm</div>
+                                        <div class="badge5">
+                                          <img class="check-contained-filled" src="resource/img/check-contained-filled.svg">
+                                          <div class="frame-4">
+                                            <div class="badge6">ĐVT: 1KG</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-price">20.000 VNĐ</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <img class="product-img" src="resource/img/Product Image.png" alt="">
+                                <div class="product-info">
+                                    <div class="product-details">
+                                      <div class="tags">
+                                        <div class="badge">
+                                          <div class="frame-4">
+                                            <div class="badge2">Hữu cơ</div>
+                                          </div>
+                                        </div>
+                                        <div class="badge3">
+                                          <div class="frame-4">
+                                            <div class="badge4">VietGap</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-description">
+                                        <div class="product-name">Tên sản phẩm</div>
+                                        <div class="badge5">
+                                          <img class="check-contained-filled" src="resource/img/check-contained-filled.svg">
+                                          <div class="frame-4">
+                                            <div class="badge6">ĐVT: 1KG</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-price">20.000 VNĐ</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <img class="product-img" src="resource/img/Product Image.png" alt="">
+                                <div class="product-info">
+                                    <div class="product-details">
+                                      <div class="tags">
+                                        <div class="badge">
+                                          <div class="frame-4">
+                                            <div class="badge2">Hữu cơ</div>
+                                          </div>
+                                        </div>
+                                        <div class="badge3">
+                                          <div class="frame-4">
+                                            <div class="badge4">VietGap</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-description">
+                                        <div class="product-name">Tên sản phẩm</div>
+                                        <div class="badge5">
+                                          <img class="check-contained-filled" src="resource/img/check-contained-filled.svg">
+                                          <div class="frame-4">
+                                            <div class="badge6">ĐVT: 1KG</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-price">20.000 VNĐ</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <img class="product-img" src="resource/img/Product Image.png" alt="">
+                                <div class="product-info">
+                                    <div class="product-details">
+                                      <div class="tags">
+                                        <div class="badge">
+                                          <div class="frame-4">
+                                            <div class="badge2">Hữu cơ</div>
+                                          </div>
+                                        </div>
+                                        <div class="badge3">
+                                          <div class="frame-4">
+                                            <div class="badge4">VietGap</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-description">
+                                        <div class="product-name">Tên sản phẩm</div>
+                                        <div class="badge5">
+                                          <img class="check-contained-filled" src="resource/img/check-contained-filled.svg">
+                                          <div class="frame-4">
+                                            <div class="badge6">ĐVT: 1KG</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-price">20.000 VNĐ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="partner-collab">
+                        <div class="text-partner-collab">
+                          <div class="text-partner">Gói hàng đối tác kết hợp</div>
+                        </div>
+                        <div class="group-comingsoon">
+                          <div class="comingsoon">
+                            <div class="rectangle-1"></div>
+                            <img class="img-group" src="resource/img/Group.svg" alt="">
+                            <img class="img-vector2" src="resource/img/Vector2.svg" alt="">
+                            <img class="img-symbol" src="resource/img/pro symbol.svg" alt="">
+                          </div>
+                          <div class="text-comingsoon">Coming soon</div>
+                        </div>
+                    </div>
+                    <div class="list-product-sale">
+                        <div class="menu-list-product">
+                            <div class="text-menu-product">Sản phẩm</div>
+                            <div class="group-button">
+                              <div class="button-1">
+                                <div class="frame-button-all">
+                                  <a class="btn-all" href="">Tất cả</a>
+                                </div>
+                              </div>
+                              <div class="frame-btn">
+                                <div class="button-2">
+                                  <div class="frame-button-best-seller">
+                                    <a class="btn-best-seller" href="">Bán chạy</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="frame-btn">
+                                <div class="button-3">
+                                  <div class="frame-button-new-product">
+                                    <a class="btn-new-product" href="">Hàng mới</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="frame-btn">
+                                <div class="button-4">
+                                  <div class="frame-button-organic">
+                                    <a class="btn-organic" href="">Organic</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="frame-btn">
+                                <div class="button-5">
+                                  <div class="frame-button-vietgap">
+                                    <a class="btn-vietgap" href="">Vietgap</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="list-product-card">
+                            <div class="group-product-card">
+                              <div class="product-card-2">
+                                <img class="product-img-2" src="resource/img/Product Image.png" alt="">
+                                <div class="product-info">
+                                    <div class="product-details">
+                                      <div class="tags">
+                                        <div class="badge">
+                                          <div class="frame-4">
+                                            <div class="badge2">Hữu cơ</div>
+                                          </div>
+                                        </div>
+                                        <div class="badge3">
+                                          <div class="frame-4">
+                                            <div class="badge4">VietGap</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-description">
+                                        <div class="product-name">Tên sản phẩm</div>
+                                        <div class="badge5">
+                                          <img class="check-contained-filled" src="resource/img/check-contained-filled.svg">
+                                          <div class="frame-4">
+                                            <div class="badge6">ĐVT: 1KG</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-price">20.000 VNĐ</div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="product-card-2">
+                                <img class="product-img-2" src="resource/img/Product Image.png" alt="">
+                                <div class="product-info">
+                                    <div class="product-details">
+                                      <div class="tags">
+                                        <div class="badge">
+                                          <div class="frame-4">
+                                            <div class="badge2">Hữu cơ</div>
+                                          </div>
+                                        </div>
+                                        <div class="badge3">
+                                          <div class="frame-4">
+                                            <div class="badge4">VietGap</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-description">
+                                        <div class="product-name">Tên sản phẩm</div>
+                                        <div class="badge5">
+                                          <img class="check-contained-filled" src="resource/img/check-contained-filled.svg">
+                                          <div class="frame-4">
+                                            <div class="badge6">ĐVT: 1KG</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-price">20.000 VNĐ</div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="product-card-2">
+                                <img class="product-img-2" src="resource/img/Product Image.png" alt="">
+                                <div class="product-info">
+                                    <div class="product-details">
+                                      <div class="tags">
+                                        <div class="badge">
+                                          <div class="frame-4">
+                                            <div class="badge2">Hữu cơ</div>
+                                          </div>
+                                        </div>
+                                        <div class="badge3">
+                                          <div class="frame-4">
+                                            <div class="badge4">VietGap</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-description">
+                                        <div class="product-name">Tên sản phẩm</div>
+                                        <div class="badge5">
+                                          <img class="check-contained-filled" src="resource/img/check-contained-filled.svg">
+                                          <div class="frame-4">
+                                            <div class="badge6">ĐVT: 1KG</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-price">20.000 VNĐ</div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="product-card-2">
+                                <img class="product-img-2" src="resource/img/Product Image.png" alt="">
+                                <div class="product-info">
+                                    <div class="product-details">
+                                      <div class="tags">
+                                        <div class="badge">
+                                          <div class="frame-4">
+                                            <div class="badge2">Hữu cơ</div>
+                                          </div>
+                                        </div>
+                                        <div class="badge3">
+                                          <div class="frame-4">
+                                            <div class="badge4">VietGap</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-description">
+                                        <div class="product-name">Tên sản phẩm</div>
+                                        <div class="badge5">
+                                          <img class="check-contained-filled" src="resource/img/check-contained-filled.svg">
+                                          <div class="frame-4">
+                                            <div class="badge6">ĐVT: 1KG</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-price">20.000 VNĐ</div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="product-card-2">
+                                <img class="product-img-2" src="resource/img/Product Image.png" alt="">
+                                <div class="product-info">
+                                    <div class="product-details">
+                                      <div class="tags">
+                                        <div class="badge">
+                                          <div class="frame-4">
+                                            <div class="badge2">Hữu cơ</div>
+                                          </div>
+                                        </div>
+                                        <div class="badge3">
+                                          <div class="frame-4">
+                                            <div class="badge4">VietGap</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-description">
+                                        <div class="product-name">Tên sản phẩm</div>
+                                        <div class="badge5">
+                                          <img class="check-contained-filled" src="resource/img/check-contained-filled.svg">
+                                          <div class="frame-4">
+                                            <div class="badge6">ĐVT: 1KG</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-price">20.000 VNĐ</div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="group-product-card">
+                              <div class="product-card-2">
+                                <img class="product-img-2" src="resource/img/Product Image.png" alt="">
+                                <div class="product-info">
+                                    <div class="product-details">
+                                      <div class="tags">
+                                        <div class="badge">
+                                          <div class="frame-4">
+                                            <div class="badge2">Hữu cơ</div>
+                                          </div>
+                                        </div>
+                                        <div class="badge3">
+                                          <div class="frame-4">
+                                            <div class="badge4">VietGap</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-description">
+                                        <div class="product-name">Tên sản phẩm</div>
+                                        <div class="badge5">
+                                          <img class="check-contained-filled" src="resource/img/check-contained-filled.svg">
+                                          <div class="frame-4">
+                                            <div class="badge6">ĐVT: 1KG</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-price">20.000 VNĐ</div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="product-card-2">
+                                <img class="product-img-2" src="resource/img/Product Image.png" alt="">
+                                <div class="product-info">
+                                    <div class="product-details">
+                                      <div class="tags">
+                                        <div class="badge">
+                                          <div class="frame-4">
+                                            <div class="badge2">Hữu cơ</div>
+                                          </div>
+                                        </div>
+                                        <div class="badge3">
+                                          <div class="frame-4">
+                                            <div class="badge4">VietGap</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-description">
+                                        <div class="product-name">Tên sản phẩm</div>
+                                        <div class="badge5">
+                                          <img class="check-contained-filled" src="resource/img/check-contained-filled.svg">
+                                          <div class="frame-4">
+                                            <div class="badge6">ĐVT: 1KG</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-price">20.000 VNĐ</div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="product-card-2">
+                                <img class="product-img-2" src="resource/img/Product Image.png" alt="">
+                                <div class="product-info">
+                                    <div class="product-details">
+                                      <div class="tags">
+                                        <div class="badge">
+                                          <div class="frame-4">
+                                            <div class="badge2">Hữu cơ</div>
+                                          </div>
+                                        </div>
+                                        <div class="badge3">
+                                          <div class="frame-4">
+                                            <div class="badge4">VietGap</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-description">
+                                        <div class="product-name">Tên sản phẩm</div>
+                                        <div class="badge5">
+                                          <img class="check-contained-filled" src="resource/img/check-contained-filled.svg">
+                                          <div class="frame-4">
+                                            <div class="badge6">ĐVT: 1KG</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-price">20.000 VNĐ</div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="product-card-2">
+                                <img class="product-img-2" src="resource/img/Product Image.png" alt="">
+                                <div class="product-info">
+                                    <div class="product-details">
+                                      <div class="tags">
+                                        <div class="badge">
+                                          <div class="frame-4">
+                                            <div class="badge2">Hữu cơ</div>
+                                          </div>
+                                        </div>
+                                        <div class="badge3">
+                                          <div class="frame-4">
+                                            <div class="badge4">VietGap</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-description">
+                                        <div class="product-name">Tên sản phẩm</div>
+                                        <div class="badge5">
+                                          <img class="check-contained-filled" src="resource/img/check-contained-filled.svg">
+                                          <div class="frame-4">
+                                            <div class="badge6">ĐVT: 1KG</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-price">20.000 VNĐ</div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="product-card-2">
+                                <img class="product-img-2" src="resource/img/Product Image.png" alt="">
+                                <div class="product-info">
+                                    <div class="product-details">
+                                      <div class="tags">
+                                        <div class="badge">
+                                          <div class="frame-4">
+                                            <div class="badge2">Hữu cơ</div>
+                                          </div>
+                                        </div>
+                                        <div class="badge3">
+                                          <div class="frame-4">
+                                            <div class="badge4">VietGap</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-description">
+                                        <div class="product-name">Tên sản phẩm</div>
+                                        <div class="badge5">
+                                          <img class="check-contained-filled" src="resource/img/check-contained-filled.svg">
+                                          <div class="frame-4">
+                                            <div class="badge6">ĐVT: 1KG</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="product-price">20.000 VNĐ</div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="button-see-more">
+                          <div class="frame-button-see-more">
+                              <a class="btn-see-more" href="">Xem thêm</a>
+                              <img class="img-loader" src="resource/img/loader-01.svg" alt="">
+                          </div>
+                        </div>
+                    </div>
+                    <div class="list-different-vft">
+                        <div class="different-vft">
+                            <div class="group-text-different">
+                              <div class="rectangle-2"></div>
+                              <div class="different">
+                                  <span>
+                                    <span class="text-different1">Sự khác biệt VFT Farms.</span>
+                                    <span class="text-different2">Sự khác biệt VFT Farms.</span>
+                                  </span>
+                              </div>  
+                            </div> 
+                        </div>
+                        <div class="group-frame">
+                            <div class="gr-frame">
+                                <div class="usp-brand-1">
+                                    <div class="text-usp-brand-1">
+                                        <div class="text-vftfarms-top">
+                                            <span>
+                                                <span class="text-vftfarms1"> Xin chào!  <br></span>
+                                                <span class="text-vftfarms2"> VFT FARMS </span>
+                                                <span class="text-vftfarms3"> rất vui được đồng hành cùng bạn 👋</span>
+                                            </span>
+                                        </div>
+                                        <div class="text-vftfarms-bottom">
+                                            <span>
+                                                <span class="text-vftfarms4">Cảm ơn bạn đã đăng ký trở thành</span>
+                                                <span class="text-vftfarms5">một thành viên của VFT Farms, chúc bạn sẵn sàng cho những trải nhiệm mua hàng sắp tới! </span>
+                                                <span class="text-vftfarms6">Cảm ơn đã đăng ký trở thành một thành viên của VFT Farms, chúc bạn sẫn sàng cho những trải nhiệm mua hàng sắp tới!🥰🥰🥰</span>
+                                                <span class="text-vftfarms7">🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰</span>
+                                              </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="usp-brand-2">
+                                    <div class="text-usp-brand-2">
+                                        <div class="text-vftfarm2-1">
+                                            <img class="local_shipping" src="resource/img/local_shipping.png" alt="">
+                                            <div class="text-brand">
+                                                <span class="text-1">Xin chào!</span>
+                                                <span class="text-2">VFT Farm</span>
+                                                <span class="text-3">rất vui được đồng hành cùng bạn 👋</span>
+                                            </div>
+                                        </div>
+                                        <div class="text-vftfarm2-2">
+                                            <img class="smiley-wink" src="resource/img/smiley-wink.png" alt="">
+                                            <div class="text-brand">
+                                              <span class="text-4">Xin chào!</span>
+                                              <span class="text-5">VFT Farm</span>
+                                              <span class="text-6">rất vui được đồng hành cùng bạn 👋</span>
+                                            </div>
+                                        </div>
+                                        <div class="text-vftfarm2-3">
+                                            <img class="wallet" src="resource/img/wallet.png" alt="">
+                                            <div class="text-brand">
+                                              <span class="text-7">Xin chào!</span>
+                                              <span class="text-8">VFT Farm</span>
+                                              <span class="text-9">rất vui được đồng hành cùng bạn 👋</span>
+                                            </div>
+                                        </div>
+                                        <div class="text-vftfarm2-4">
+                                            <img class="bag-04" src="resource/img/bag-040.svg" alt="">
+                                            <div class="text-brand">
+                                              <span class="text-10">Xin chào!</span>
+                                              <span class="text-11">VFT Farm</span>
+                                              <span class="text-12">rất vui được đồng hành cùng bạn 👋</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="vft-frame-app">
+                            <img class="font-app-vft" src="resource/img/font-app-vft.png" alt="">
+                            <div class="background"></div>
+                            <div class="phone-images">
+                              <div class="i-phone-12-pro">
+                                <img class="i-phone-12-pro2" src="resource/img/iPhone 12 Pro-2.png" />
+                                <img class="screen-i-phone-12-pro" src="resource/img/Screen iPhone 12 Pro-2.png" />
+                              </div>
+                            <div class="i-phone-12-pro3">
+                              <img class="i-phone-12-pro2" src="resource/img/iPhone 12 Pro-2.png" />
+                              <img class="screen-i-phone-12-pro2" src="resource/img/Screen iPhone 12 Pro-2.png" />
+                            </div>
+                            <div class="i-phone-12-pro4">
+                              <img class="i-phone-12-pro2" src="resource/img/iPhone 12 Pro-2.png" />
+                              <img class="screen-i-phone-12-pro3" src="resource/img/Screen iPhone 12 Pro-2.png" />
+                            </div>
+                            </div>                              
+                            <div class="vftapp-header">
+                              <div class="title-vftapp">App VFT Farms</div>
+                              <div class="subtitle1">Tải app để có trải nghiệm tốt hơn khi mua hàng</div>
+                            </div>
+                            <div class="download-button">
+                              <div class="buttons9">
+                                  <img class="icon-apple" src="resource/img/Social.png" alt="">
+                                  <div class="frame-btn-ap">
+                                      <a class="btn-ap" href="">App stores</a>
+                                  </div>
+                              </div>
+                              <div class="buttons9">
+                                  <img class="icon-chplay" src="resource/img/Social.png" alt="">
+                                  <div class="frame-btn-ch">
+                                      <a class="btn-chplay" href="">App stores</a>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="group-news">
+                        <div class="title-news">
+                            <div class="text-title">Tin tức VFT Farms</div>
+                        </div>
+                        <div class="list-news">
+                            <div class="news-1">
+                                <img class="rectangle-vft" src="" alt="">
+                                <div class="title-h1">
+                                      <img class="path-vft" src="" alt="">
+                                      <div class="title-vftfarms">Sự khác biệt VFT FARMS</div>
+                                </div>
+                                <div class="title-p">
+                                      <p class="paragraph-1">Cảm ơn bạn đã đăng kí trở thành một thành viên của VFT Farms, chúc bạn sẵn sàng cho những trải nghiệm mua hàng sắp tới! 🥰🥰🥰</p>
+                                </div>
+                                <div class="title-p2">
+                                      <div class="frame-vftfarms">
+                                          <div class="title-vftfarms1">VFT Farms</div>
+                                      </div>
+                                      <div class="frame-vftfarms2">
+                                          <div class="writter">Nguyễn Đức Triệu</div>
+                                          <div class="text-news">/</div>
+                                          <div class="date-news">04/03/2025</div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="news-2">
+                                <div class="news-vft2">
+                                  <img class="rectangle-vft2" src="" alt="">
+                                  <div class="frame-group-vft">
+                                    <div class="title-h2">
+                                          <div class="title-vftfarms2">Sự khác biệt VFT FARMS</div>
+                                    </div>
+                                    <div class="title-p2">
+                                          <p class="paragraph-1-2">Cảm ơn bạn đã đăng kí trở thành một thành viên của VFT Farms, chúc bạn sẵn sàng cho những trải nghiệm mua hàng sắp tới! 🥰🥰🥰</p>
+                                    </div>
+                                    <div class="title-p2-2">
+                                          <div class="frame-vftfarms2">
+                                          <div class="title-vftfarms1-2">VFT Farms</div>
+                                          </div>
+                                    <div class="frame-vftfarms2-2">
+                                          <div class="writter-2">Nguyễn Đức Triệu</div>
+                                          <div class="text-news-2">/</div>
+                                          <div class="date-news-2">04/03/2025</div>
+                                    </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="line-5"></div>
+                                <div class="news-vft2">
+                                  <img class="rectangle-vft2" src="" alt="">
+                                  <div class="frame-group-vft">
+                                    <div class="title-h2">
+                                          <div class="title-vftfarms2">Sự khác biệt VFT FARMS</div>
+                                    </div>
+                                    <div class="title-p2">
+                                          <p class="paragraph-1-2">Cảm ơn bạn đã đăng kí trở thành một thành viên của VFT Farms, chúc bạn sẵn sàng cho những trải nghiệm mua hàng sắp tới! 🥰🥰🥰</p>
+                                    </div>
+                                    <div class="title-p2-2">
+                                          <div class="frame-vftfarms2">
+                                          <div class="title-vftfarms1-2">VFT Farms</div>
+                                          </div>
+                                    <div class="frame-vftfarms2-2">
+                                          <div class="writter-2">Nguyễn Đức Triệu</div>
+                                          <div class="text-news-2">/</div>
+                                          <div class="date-news-2">04/03/2025</div>
+                                    </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="line-5"></div>
+                                <div class="news-vft2">
+                                  <img class="rectangle-vft2" src="" alt="">
+                                  <div class="frame-group-vft">
+                                    <div class="title-h2">
+                                          <div class="title-vftfarms2">Sự khác biệt VFT FARMS</div>
+                                    </div>
+                                    <div class="title-p2">
+                                          <p class="paragraph-1-2">Cảm ơn bạn đã đăng kí trở thành một thành viên của VFT Farms, chúc bạn sẵn sàng cho những trải nghiệm mua hàng sắp tới! 🥰🥰🥰</p>
+                                    </div>
+                                    <div class="title-p2-2">
+                                          <div class="frame-vftfarms2">
+                                          <div class="title-vftfarms1-2">VFT Farms</div>
+                                          </div>
+                                    <div class="frame-vftfarms2-2">
+                                          <div class="writter-2">Nguyễn Đức Triệu</div>
+                                          <div class="text-news-2">/</div>
+                                          <div class="date-news-2">04/03/2025</div>
+                                    </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="head-ft">
+                        <img class="logo-vft-ft" src="resource/img/logo vft 1.png" alt="">
+                        <div class="contact-info-container">
+                          <div class="contact">
+                            <div class="header2">Về chúng tôi</div>
+                            <div class="items-container">
+                              <a class="item-text" href="">Giới thiệu</a>
+                              <a class="item-text" href="">Tin tức</a>
+                              <a class="item-text" href="">Chuổi an toan thực phẩm Việt Nam</a>
+                              <a class="item-text" href="">Hỏi đáp</a>
+                            </div>
+                          </div>
+                          <div class="contact">
+                            <div class="header2">Thông tin chính sách</div>
+                            <div class="items-container">
+                              <a class="item-text" href="">Điều khoản &amp; điều kiện</a>
+                              <a class="item-text" href="">Chính sách bảo mật</a>
+                              <a class="item-text" href="">Chính sách giao hàng</a>
+                              <a class="item-text" href="">Chính sách khiếu nại</a>
+                              <a class="item-text" href="">Chính sách ưu đãi khách hàng</a>
+                              <a class="item-text" href="">Chính sách thanh toán</a>
+                              <a class="item-text" href="">Về chúng tôi</a>
+                            </div>
+                          </div>
+                          <div class="container-vft">
+                            <div class="text-container">
+                              <div class="title">Chào mừng bạn đến với VFT Farms V2</div>
+                              <div class="subtitle">
+                                Hãy trải nghiệm và phản hồi để chúng mình có thể cải thiện tốt hơn
+                              </div>
+                            </div>
+                            <div class="buttons">
+                              <div class="frame-1">
+                                <a class="text" href="">Gửi góp ý</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="footer3">
+                      <div class="frame-66">
+                        <div class="footer-container">
+                          <div class="footer-info-container">
+                            <div class="copyright-text">
+                              © Bản quyền thuộc về VFT Farms | Cung cấp bởi
+                            </div>
+                            <div class="address-container">
+                              <img class="location-on" src="resource/img/location-on0.svg" />
+                              <div class="address-text">
+                                130 Nguyễn Đức Cảnh, Tương Mai, Hai Bà Trưng, Hà Nội, Vietnam
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="social-media-container">
+                          <img class="social-media-icon" src="resource/img/social-media-icon0.png" />
+                          <img class="image-ls-is-cached" src="resource/img/image-ls-is-cached0.png" />
+                        </div>
+                      </div>
+                      <div class="frame-67">
+                        <div class="buttons2">
+                          <img class="misc-icons-social" src="resource/img/misc-icons-social0.svg" />
+                        </div>
+                        <div class="buttons2">
+                          <div class="misc-icons-social2">
+                            <img class="symbol" src="resource/img/symbol0.svg" />
+                          </div>
+                        </div>
+                        <div class="buttons2">
+                          <img class="misc-icons-social3" src="resource/img/misc-icons-social2.svg" />
+                        </div>
+                        <div class="buttons2">
+                          <div class="misc-icons-social2">
+                            <img class="lozenge" src="resource/img/lozenge0.svg" />
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="divider2"></div>
+            </footer>
+        </div>
+        <script src="/resource/js/cart.js" async defer></script>
+        <script src="/resource/js/index.js" async defer></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        
+    </body>
+</html>
